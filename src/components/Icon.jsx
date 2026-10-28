@@ -1,2 +1,3 @@
-import * as Icons from 'lucide-react';
+import {BookOpen,CodeXml,ChevronsUpDown,LayoutDashboard,Users,Package,GraduationCap,ClipboardList,ShieldCheck,LockKeyhole,ListChecks,ListFilter,Database,Server,Braces,FileCode2,Atom,CheckCheck,Bug,ChevronRight,Search,Sun,Moon,Menu,Terminal,ArrowRight,ArrowUpRight,Layers3,Copy,Clock3,Zap,History,Lightbulb,Sparkles,Check,Plus,Eye,Pencil,Trash2,X,Play} from 'lucide-react';
+const Icons={BookOpen,CodeXml,ChevronsUpDown,LayoutDashboard,Users,Package,GraduationCap,ClipboardList,ShieldCheck,LockKeyhole,ListChecks,ListFilter,Database,Server,Braces,FileCode2,Atom,CheckCheck,Bug,ChevronRight,Search,Sun,Moon,Menu,Terminal,ArrowRight,ArrowUpRight,Layers3,Copy,Clock3,Zap,History,Lightbulb,Sparkles,Check,Plus,Eye,Pencil,Trash2,X,Play};
 export default function Icon({name,...props}){const C=Icons[name]||Icons.BookOpen;return <C size={18} strokeWidth={1.7} {...props}/>}
