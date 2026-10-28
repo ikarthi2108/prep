@@ -1,0 +1,83 @@
+[
+  {
+    "key": "employees",
+    "name": "Employee",
+    "fields": [
+      "name",
+      "email",
+      "department",
+      "designation",
+      "salary"
+    ],
+    "numbers": [
+      "salary"
+    ],
+    "sample": {
+      "name": "Alex Morgan",
+      "email": "alex@example.com",
+      "department": "Engineering",
+      "designation": "Developer",
+      "salary": 65000
+    }
+  },
+  {
+    "key": "products",
+    "name": "Product",
+    "fields": [
+      "name",
+      "description",
+      "price",
+      "category",
+      "stock"
+    ],
+    "numbers": [
+      "price",
+      "stock"
+    ],
+    "sample": {
+      "name": "Wireless keyboard",
+      "description": "Compact mechanical keyboard",
+      "price": 79,
+      "category": "Electronics",
+      "stock": 24
+    }
+  },
+  {
+    "key": "students",
+    "name": "Student",
+    "fields": [
+      "name",
+      "email",
+      "course",
+      "marks"
+    ],
+    "numbers": [
+      "marks"
+    ],
+    "sample": {
+      "name": "Jamie Lee",
+      "email": "jamie@example.com",
+      "course": "Computer Science",
+      "marks": 89
+    }
+  },
+  {
+    "key": "tasks",
+    "name": "Task",
+    "fields": [
+      "title",
+      "description",
+      "status",
+      "priority",
+      "dueDate"
+    ],
+    "numbers": [],
+    "sample": {
+      "title": "Build the employee API",
+      "description": "Implement all five endpoints",
+      "status": "Pending",
+      "priority": "High",
+      "dueDate": "2026-11-01"
+    }
+  }
+]

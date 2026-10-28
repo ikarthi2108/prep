@@ -1,0 +1,4 @@
+const files=import.meta.glob(['/examples/**/*.jsx','/examples/**/*.js','/backend/**/*.js','/backend/package.json','/backend/.env.example','!/backend/node_modules/**','!/backend/tests/**'],{query:'?raw',import:'default',eager:true});
+export function source(path){return files['/'+path]||''}
+export function sourceFiles(prefix){return Object.entries(files).filter(([path])=>path.startsWith('/'+prefix)).map(([path,code])=>({file:path.slice(1),code,language:path.endsWith('.jsx')?'jsx':path.endsWith('.json')?'json':path.endsWith('.example')?'bash':'javascript'}))}
+export function downloadFiles(files,name){const blob=new Blob([files.map(f=>'// FILE: '+f.file+'\n'+f.code).join('\n\n')],{type:'text/plain'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name+'.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
